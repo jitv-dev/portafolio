@@ -1,0 +1,62 @@
+body {
+    background-image: url(../images/global/background.png);
+    background-size: cover;
+
+}
+
+main {
+    padding-top: 120px;
+}
+
+section {
+    scroll-margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 100px;
+    }
+    section {
+        scroll-margin-top: 100px;
+    }
+}
+
+.borde-propio {
+    border-color: #EC0A0B !important;
+}
+
+.navbar-brand:hover {
+    color: #EC0A0B;
+    text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
+}
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #EC0A0B;
+    text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
+}
+
+.boton-propio {
+    color: #EC0A0B !important;
+    background-color: transparent !important;
+}
+
+.boton-propio:hover {
+    background-color: #EC0A0B !important;
+    color: #ffffff !important;
+    border-color: #EC0A0B !important;
+}
+
+.barra-izquierda {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.barra-izquierda:hover {
+    color: #EC0A0B;
+    text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
+}
