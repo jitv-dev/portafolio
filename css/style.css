@@ -51,6 +51,16 @@ section {
     border-color: #EC0A0B !important;
 }
 
+.icono-propio {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.icono-propio:hover {
+    color: #EC0A0B;
+    text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
+}
+
 .barra-izquierda {
     transition: all 0.3s ease;
     position: relative;
