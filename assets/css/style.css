@@ -1,11 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(../images/global/background.png);
     background-size: cover;
-
-}
-
-main {
-    padding-top: 120px;
 }
 
 section {
@@ -16,9 +15,21 @@ section {
     main {
         padding-top: 100px;
     }
+
     section {
         scroll-margin-top: 100px;
     }
+
+    #inicio {
+        padding-bottom: 50px;
+    }
+}
+
+#inicio {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .borde-propio {
@@ -61,6 +72,10 @@ section {
     text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
 }
 
+.color-propio {
+    color: #EC0A0B;
+}
+
 .barra-izquierda {
     transition: all 0.3s ease;
     position: relative;
@@ -69,4 +84,26 @@ section {
 .barra-izquierda:hover {
     color: #EC0A0B;
     text-shadow: 0 0 5px #EC0A0B, 0 0 10px #EC0A0B;
+}
+
+/* Animaciones para proyectos */
+#proyectos .card {
+    opacity: 0;
+    transition: all 2s ease-out;
+}
+
+/* Animación de izquierda a derecha */
+#proyectos .card.slide-left {
+    transform: translateX(-250px);
+}
+
+/* Animación de derecha a izquierda */
+#proyectos .card.slide-right {
+    transform: translateX(250px);
+}
+
+/* Estado final cuando entra en vista */
+#proyectos .card.animate-in {
+    opacity: 1;
+    transform: translateX(0);
 }
