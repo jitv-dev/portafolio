@@ -5,6 +5,8 @@ html {
 body {
     background-image: url(../images/global/background.png);
     background-size: cover;
+    overflow-x: hidden;
+    max-width: 100vw;
 }
 
 section {
@@ -13,7 +15,7 @@ section {
 
 @media (max-width: 768px) {
     main {
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     section {
@@ -35,6 +37,16 @@ section {
 
 .borde-propio {
     border-color: #EC0A0B !important;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.navbar-collapse {
+    width: 100%;
 }
 
 .navbar-brand:hover {
