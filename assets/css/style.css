@@ -107,3 +107,30 @@ section {
     opacity: 1;
     transform: translateX(0);
 }
+
+
+
+/* Pagina de gracias */
+body.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.thank-you-page main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 0;
+}
+
+body.thank-you-page #gracias-section {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    body.thank-you-page main {
+        padding-top: 60px;
+    }
+}
