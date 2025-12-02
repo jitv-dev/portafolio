@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Uma Roulette - Proyecto</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border borde-propio border-1 fixed-top"
+            data-bs-theme="dark">
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand me-auto fw-bold fs-2" href="../../index.html">Jeibi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="navbar-nav ms-auto mb-lg-0 fs-5 fw-bold">
+                        <a class="nav-link" href="../../index.html#sobre-mi">Sobre mi</a>
+                        <a class="nav-link" href="../../index.html#habilidades">Habilidades</a>
+                        <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
+                        <a class="nav-link" href="../../index.html#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero más compacto -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="text-center mb-4">
+                            <h1 class="hero-title mb-3">Uma Roulette</h1>
+                            <p class="lead text-light mb-3">
+                                Sorteos con carreras de caballos animadas · Inspirado en Uma Musume
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge badge-tech">JavaScript</span>
+                                <span class="badge badge-tech">HTML5</span>
+                                <span class="badge badge-tech">CSS3</span>
+                                <span class="badge badge-tech">Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <!-- Imagen hero integrada -->
+                        <div class="proyecto-img-container mb-4">
+                            <img src="../../assets/images/proyectos/proyecto2/hero.webp"
+                                class="img-fluid rounded proyecto-hero-img" alt="Uma Roulette">
+                        </div>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-3">
+                            <a href="#como-funciona" class="btn btn-danger px-4 py-2">
+                                <i class="bi bi-play-circle me-2"></i>Ver en acción
+                            </a>
+                            <a href="https://github.com/jitv-dev/uma-roulette" target="_blank"
+                                class="btn text-light border borde-propio boton-propio px-4 py-2">
+                                <i class="bi bi-github me-2"></i>Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qué es esto -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">¿Qué es esto?</h2>
+                        <div class="proyecto-content">
+                            <p class="text-light fs-5 mb-3">
+                                Uma Roulette es básicamente una forma divertida de hacer sorteos.
+                                Está inspirada en el juego Uma Musume (de ahí los caballos), pero la idea
+                                surgió cuando necesitaba una manera más entretenida de elegir ganadores
+                                en streams o eventos con amigos.
+                            </p>
+                            <p class="text-light">
+                                Lo bueno es que puedes agregar hasta 8 participantes, cada uno tiene su
+                                propio caballo animado, y las carreras son 100% aleatorias. No hay trampa
+                                ni cartón.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lo que hace -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Lo que hace</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+                                    <h5 class="text-light">Gestión dinámica</h5>
+                                    <p class="text-light mb-0">Agrega o quita participantes cuando quieras, hasta 8
+                                        máximo</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-palette-fill"></i></div>
+                                    <h5 class="text-light">Caballos únicos</h5>
+                                    <p class="text-light mb-0">Cada corredor tiene un sprite diferente, todos animados
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-shuffle"></i></div>
+                                    <h5 class="text-light">100% aleatorio</h5>
+                                    <p class="text-light mb-0">Velocidades random en cada carrera, nadie sabe quién gana
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-moon-stars-fill"></i></div>
+                                    <h5 class="text-light">Tema claro/oscuro</h5>
+                                    <p class="text-light mb-0">Cambia el tema según tu preferencia</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-phone-fill"></i></div>
+                                    <h5 class="text-light">Funciona en todo</h5>
+                                    <p class="text-light mb-0">PC, tablet, celular... donde sea</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+                                    <h5 class="text-light">Opciones post-carrera</h5>
+                                    <p class="text-light mb-0">Elimina al ganador o corre de nuevo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="como-funciona" class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Cómo funciona</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <img src="../../assets/images/proyectos/proyecto2/agregar.gif"
+                                        class="img-fluid rounded mb-3" alt="Agregar participantes">
+                                    <h5 class="text-light">1. Agrega participantes</h5>
+                                    <p class="text-light">Escribe los nombres y van apareciendo con sus caballos</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <img src="../../assets/images/proyectos/proyecto2/carrera.gif"
+                                        class="img-fluid rounded mb-3" alt="Carrera en progreso">
+                                    <h5 class="text-light">2. Dale Start</h5>
+                                    <p class="text-light">Los caballos empiezan a correr con velocidades aleatorias</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <img src="../../assets/images/proyectos/proyecto2/ganador.gif"
+                                        class="img-fluid rounded mb-3" alt="Pantalla de ganador">
+                                    <h5 class="text-light">3. El ganador</h5>
+                                    <p class="text-light">Se anuncia quién ganó y puedes elegir qué hacer después</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <img src="../../assets/images/proyectos/proyecto2/tema-oscuro.gif"
+                                        class="img-fluid rounded mb-3" alt="Cambio de tema">
+                                    <h5 class="text-light">Extra: Cambia el tema</h5>
+                                    <p class="text-light">Modo claro u oscuro según lo que prefieras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parte técnica -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">La parte técnica</h2>
+
+                        <div class="tech-content">
+                            <h4 class="text-light mb-3">Cosas interesantes que resolví</h4>
+
+                            <div class="tech-item mb-4">
+                                <h5 class="color-propio">Sistema de sprites únicos</h5>
+                                <p class="text-light mb-3">
+                                    Tenía que asegurarme de que cada participante tuviera un caballo diferente.
+                                    Creé un "pool" de sprites disponibles que se van asignando y reciclando cuando
+                                    alguien se elimina.
+                                </p>
+                                <div class="code-snippet">
+                                    <pre><code>function obtenerSpriteUnico() {
+    if (spritesRestantes.length === 0) {
+        spritesRestantes = [...spritesDisponibles]
+            .sort(() => Math.random() - 0.5);
+    }
+    return spritesRestantes.shift();
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tech-item mb-4">
+                                <h5 class="color-propio">Animación de las carreras</h5>
+                                <p class="text-light mb-3">
+                                    Usé setInterval para actualizar las posiciones cada 100ms. Cada caballo
+                                    avanza una cantidad aleatoria, y cuando uno llega al 95% de la pista,
+                                    se detiene todo y se anuncia el ganador.
+                                </p>
+                                <div class="code-snippet">
+                                    <pre><code>intervaloCarrera = setInterval(() => {
+    participantes.forEach((p, i) => {
+        p.progreso += Math.random() * 2.5 + 1;
+        
+        const porcentaje = Math.min(p.progreso, 95);
+        elementosCaballos[i].style.left = porcentaje + '%';
+
+        if (p.progreso >= 95) {
+            clearInterval(intervaloCarrera);
+            mostrarGanador();
+        }
+    });
+}, 100);</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tech-item">
+                                <h5 class="color-propio">Sin frameworks</h5>
+                                <p class="text-light">
+                                    Todo está hecho con JavaScript vanilla. Manipulación directa del DOM,
+                                    gestión de estado manual, y eventos puros. A veces es bueno hacer las
+                                    cosas desde cero para entender bien cómo funcionan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lo que aprendí -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Lo que aprendí</h2>
+
+                        <div class="learning-grid">
+                            <div class="learning-item">
+                                <i class="bi bi-code-square color-propio"></i>
+                                <h5 class="text-light">Manipulación del DOM</h5>
+                                <p class="text-light">Crear y actualizar elementos dinámicamente sin librerías</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-gear-fill color-propio"></i>
+                                <h5 class="text-light">Gestión de estado</h5>
+                                <p class="text-light">Manejar múltiples estados sin herramientas como Redux</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-lightning-fill color-propio"></i>
+                                <h5 class="text-light">Animaciones fluidas</h5>
+                                <p class="text-light">Combinar CSS y JavaScript para movimientos suaves</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-layout-text-window color-propio"></i>
+                                <h5 class="text-light">Diseño responsive</h5>
+                                <p class="text-light">Que funcione bien en cualquier pantalla</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo completo -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section text-center">
+                        <h2 class="text-light mb-4">Demo completo</h2>
+                        <div class="demo-full mb-4">
+                            <img src="../../assets/images/proyectos/proyecto2/demo.gif" class="img-fluid rounded"
+                                alt="Demo completo de Uma Roulette">
+                        </div>
+                        <p class="text-light">
+                            Acá puedes ver el flujo completo: agregar participantes, correr y ver el ganador
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volver -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section text-center">
+                        <h3 class="text-light mb-4">¿Quieres ver más proyectos?</h3>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a href="../../index.html#proyectos" class="btn btn-danger px-4 py-2">
+                                <i class="bi bi-arrow-left me-2"></i>Ver más proyectos
+                            </a>
+                            <a href="../../index.html#contacto"
+                                class="btn text-light border borde-propio boton-propio px-4 py-2">
+                                <i class="bi bi-envelope me-2"></i>Hablemos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="navbar navbar-dark bg-black border borde-propio border-2 mt-5" data-bs-theme="dark">
+        <div class="container-fluid mx-3">
+            <div class="navbar-brand me-auto fw-bold">
+                <span>&copy; 2025 Portafolio Personal</span>
+            </div>
+            <div class="navbar-nav ms-auto flex-row gap-2">
+                <span class="nav-text fw-bold d-none d-sm-inline align-self-center text-light">Contacto:</span>
+                <a href="https://github.com/jitv-dev" class="nav-link text-white p-0" title="GitHub">
+                    <i class="bi bi-github fs-5"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/javier-torres-valenz/" class="nav-link text-white p-0"
+                    title="LinkedIn">
+                    <i class="bi bi-linkedin fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

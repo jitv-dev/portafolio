@@ -169,3 +169,299 @@ body.thank-you-page #gracias-section {
         transform: translateY(-10px);
     }
 }
+
+/* === ESTILOS PARA PROYECTO 2 (UMA ROULETTE) === */
+
+/* Hero section más compacta */
+.hero-section {
+    min-height: auto;
+    padding: 120px 0 40px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(236, 10, 11, 0.2);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-section {
+        padding: 100px 0 30px;
+    }
+}
+
+/* Imagen hero con estilo más relajado */
+.proyecto-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #EC0A0B;
+    box-shadow: 0 8px 32px rgba(236, 10, 11, 0.15);
+}
+
+.proyecto-hero-img {
+    transition: transform 0.4s ease;
+}
+
+.proyecto-img-container:hover .proyecto-hero-img {
+    transform: scale(1.02);
+}
+
+/* Badges de tecnologías más suaves */
+.badge-tech {
+    background-color: rgba(45, 45, 45, 0.6);
+    border: 1px solid rgba(236, 10, 11, 0.5);
+    color: #e0e0e0;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.badge-tech:hover {
+    background-color: rgba(236, 10, 11, 0.2);
+    border-color: #EC0A0B;
+    transform: translateY(-2px);
+}
+
+/* Secciones del proyecto con estilo más personal */
+.proyecto-section {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(236, 10, 11, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-section h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.proyecto-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #EC0A0B;
+}
+
+@media (max-width: 768px) {
+    .proyecto-section {
+        padding: 1.5rem;
+    }
+
+    .proyecto-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Contenido con espaciado natural */
+.proyecto-content p {
+    line-height: 1.8;
+}
+
+/* Cards de features más amigables */
+.feature-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(236, 10, 11, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    border-color: rgba(236, 10, 11, 0.6);
+    transform: translateY(-4px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #EC0A0B;
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+.feature-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Cards de demo más visuales */
+.demo-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(236, 10, 11, 0.2);
+    border-radius: 10px;
+    padding: 1.2rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-card:hover {
+    border-color: rgba(236, 10, 11, 0.5);
+    transform: translateY(-3px);
+}
+
+.demo-card img {
+    border: 1px solid rgba(236, 10, 11, 0.3);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.demo-card:hover img {
+    transform: scale(1.03);
+}
+
+.demo-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.demo-card p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* Sección técnica con estilo más casual */
+.tech-content {
+    padding: 1rem 0;
+}
+
+.tech-item {
+    padding-left: 1rem;
+    border-left: 3px solid rgba(236, 10, 11, 0.3);
+}
+
+.tech-item h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Snippets de código con mejor visual */
+.code-snippet {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(236, 10, 11, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-snippet pre {
+    margin: 0;
+    padding: 1.2rem;
+    background: transparent !important;
+    border: none !important;
+}
+
+.code-snippet code {
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* Grid de aprendizajes */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.learning-item {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(236, 10, 11, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.learning-item:hover {
+    border-color: rgba(236, 10, 11, 0.5);
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.learning-item i {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.learning-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.learning-item p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
+/* Demo completo destacado */
+.demo-full {
+    border: 2px solid rgba(236, 10, 11, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(236, 10, 11, 0.1);
+}
+
+.demo-full img {
+    transition: transform 0.3s ease;
+}
+
+.demo-full:hover img {
+    transform: scale(1.01);
+}
+
+/* Ajustes responsive para proyecto */
+@media (max-width: 576px) {
+
+    .feature-card,
+    .demo-card,
+    .learning-item {
+        padding: 1.2rem;
+    }
+
+    .feature-icon,
+    .learning-item i {
+        font-size: 1.8rem;
+    }
+
+    .code-snippet code {
+        font-size: 0.8rem;
+    }
+
+    .demo-card img {
+        height: 200px;
+    }
+}
