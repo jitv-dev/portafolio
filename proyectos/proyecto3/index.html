@@ -1,42 +1,420 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+<html lang="es">
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-    </head>
+<head>
+    <title>Sistema de Estacionamiento - Proyecto</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
 
-    <body>
-        <header>
-            <h1>Estacionamiento</h1>
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black border borde-propio border-1 fixed-top"
+            data-bs-theme="dark">
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand me-auto fw-bold fs-2" href="../../index.html">Jeibi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <div class="navbar-nav ms-auto mb-lg-0 fs-5 fw-bold">
+                        <a class="nav-link" href="../../index.html#sobre-mi">Sobre mi</a>
+                        <a class="nav-link" href="../../index.html#habilidades">Habilidades</a>
+                        <a class="nav-link" href="../../index.html#proyectos">Proyectos</a>
+                        <a class="nav-link" href="../../index.html#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10">
+                        <div class="text-center mb-4">
+                            <h1 class="hero-title mb-3">Sistema de Estacionamiento</h1>
+                            <p class="lead text-light mb-3">
+                                Aplicación de escritorio para gestión completa de estacionamientos
+                            </p>
+                            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                                <span class="badge badge-tech">Python</span>
+                                <span class="badge badge-tech">Tkinter</span>
+                                <span class="badge badge-tech">SQLite</span>
+                                <span class="badge badge-tech">GUI</span>
+                            </div>
+                        </div>
+
+                        <!-- Imagen hero -->
+                        <div class="proyecto-img-container mb-4">
+                            <img src="../../assets/images/proyectos/proyecto3/hero.png"
+                                class="img-fluid rounded proyecto-hero-img" alt="Sistema de Estacionamiento">
+                        </div>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-3">
+                            <a href="#caracteristicas" class="btn btn-danger px-4 py-2">
+                                <i class="bi bi-play-circle me-2"></i>Ver características
+                            </a>
+                            <a href="https://github.com/jitv-dev/parking-system" target="_blank"
+                                class="btn text-light border borde-propio boton-propio px-4 py-2">
+                                <i class="bi bi-github me-2"></i>Código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qué es -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">¿Qué es?</h2>
+                        <div class="proyecto-content">
+                            <p class="text-light fs-5 mb-3">
+                                Un sistema completo de gestión de estacionamientos desarrollado en Python.
+                                La idea surgió cuando mi tio empezó a trabajar como encargado de estacionamiento, asi que al verlo tan complicado manejando un excel o papel y calculadora para llevar el control, decidí crear algo simple
+                                pero funcional.
+                            </p>
+                            <p class="text-light">
+                                El sistema permite registrar entradas y salidas de vehículos, calcular costos
+                                automáticamente, manejar pagos en efectivo o tarjeta, y llevar un historial
+                                completo. Todo guardado en una base de datos SQLite local.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section id="caracteristicas" class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Características principales</h2>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-calendar-check"></i></div>
+                                    <h5 class="text-light">Control de entradas/salidas</h5>
+                                    <p class="text-light mb-0">Registra patentes con fecha y hora automática</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-calculator"></i></div>
+                                    <h5 class="text-light">Cálculo automático</h5>
+                                    <p class="text-light mb-0">Calcula el costo según el tiempo estacionado</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-cash-coin"></i></div>
+                                    <h5 class="text-light">Métodos de pago</h5>
+                                    <p class="text-light mb-0">Soporta efectivo con cálculo de vuelto y tarjeta</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-database"></i></div>
+                                    <h5 class="text-light">Base de datos local</h5>
+                                    <p class="text-light mb-0">SQLite para persistencia sin necesidad de servidor</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-clock-history"></i></div>
+                                    <h5 class="text-light">Historial completo</h5>
+                                    <p class="text-light mb-0">Registro de todas las transacciones con búsqueda</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-card">
+                                    <div class="feature-icon"><i class="bi bi-list-ul"></i></div>
+                                    <h5 class="text-light">Vista en tiempo real</h5>
+                                    <p class="text-light mb-0">Lista actualizada de vehículos estacionados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Flujo de trabajo</h2>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <div class="img-container">
+                                        <img src="../../assets/images/proyectos/proyecto3/entrada.png"
+                                            class="img-fluid rounded" alt="Registro de entrada">
+                                    </div>
+                                    <h5 class="text-light">1. Registro de entrada</h5>
+                                    <p class="text-light">Se ingresa la patente y el sistema guarda automáticamente la
+                                        hora</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <div class="img-container">
+                                        <img src="../../assets/images/proyectos/proyecto3/consulta.png"
+                                            class="img-fluid rounded" alt="Consulta de costo">
+                                    </div>
+                                    <h5 class="text-light">2. Consultar costo</h5>
+                                    <p class="text-light">Calcula el costo actual y congela el tiempo para el pago</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <div class="img-container">
+                                        <img src="../../assets/images/proyectos/proyecto3/salida.png"
+                                            class="img-fluid rounded" alt="Registro de salida">
+                                    </div>
+                                    <h5 class="text-light">3. Registro de salida</h5>
+                                    <p class="text-light">Procesa el pago y genera el ticket con todos los detalles</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="demo-card">
+                                    <div class="img-container">
+                                        <img src="../../assets/images/proyectos/proyecto3/historial.png"
+                                            class="img-fluid rounded" alt="Historial">
+                                    </div>
+                                    <h5 class="text-light">4. Historial</h5>
+                                    <p class="text-light">Búsqueda por fecha y visualización de todas las transacciones
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parte técnica -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">La parte técnica</h2>
+
+                        <div class="tech-content">
+                            <h4 class="text-light mb-3">Decisiones técnicas importantes</h4>
+
+                            <div class="tech-item mb-4">
+                                <h5 class="color-propio">Tkinter para la interfaz</h5>
+                                <p class="text-light mb-3">
+                                    Elegí Tkinter porque viene incluido con Python, lo que hace que la aplicación
+                                    sea fácil de distribuir sin dependencias extra. Aunque no es la librería más
+                                    bonita, es perfectamente funcional para aplicaciones de escritorio simples.
+                                </p>
+                                <div class="code-snippet">
+                                    <pre><code># Configuración básica de la ventana
+root = tk.Tk()
+root.title("Sistema de Estacionamiento")
+root.geometry("1100x700")
+root.configure(bg='#f0f0f0')</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tech-item mb-4">
+                                <h5 class="color-propio">SQLite como base de datos</h5>
+                                <p class="text-light mb-3">
+                                    SQLite es perfecto para este proyecto: no necesita instalación ni configuración,
+                                    todo se guarda en un archivo local, y es súper rápido para el volumen de datos
+                                    que maneja un estacionamiento pequeño.
+                                </p>
+                                <div class="code-snippet">
+                                    <pre><code>def init_db():
+    conn = sqlite3.connect("parking.db")
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS parking (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            plate TEXT UNIQUE,
+            entry_time TEXT
+        )
+    """)
+    conn.commit()
+    conn.close()</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tech-item mb-4">
+                                <h5 class="color-propio">Sistema de congelamiento de tiempo</h5>
+                                <p class="text-light mb-3">
+                                    Una funcionalidad clave es poder consultar el costo antes de procesar la salida.
+                                    El sistema "congela" el tiempo calculado para que el cliente pueda preparar el
+                                    pago sin que siga corriendo el contador.
+                                </p>
+                                <div class="code-snippet">
+                                    <pre><code>if time_frozen and last_calculated_time and plate == frozen_plate:
+    exit_time = last_calculated_time
+    time_diff = frozen_time_diff
+    cost = frozen_cost
+else:
+    exit_time = datetime.datetime.now()
+    time_diff = (exit_time - entry_time).total_seconds() / 60
+    cost = round(time_diff * get_cost(), 2)</code></pre>
+                                </div>
+                            </div>
+
+                            <div class="tech-item">
+                                <h5 class="color-propio">Cálculo de vuelto automático</h5>
+                                <p class="text-light">
+                                    Para pagos en efectivo, el sistema calcula automáticamente el vuelto y lo
+                                    muestra en un popup grande y claro. Esto acelera el proceso y evita errores
+                                    de cálculo manual.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lo que aprendí -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Lo que aprendí</h2>
+
+                        <div class="learning-grid">
+                            <div class="learning-item">
+                                <i class="bi bi-window color-propio"></i>
+                                <h5 class="text-light">Desarrollo de GUI</h5>
+                                <p class="text-light">Crear interfaces gráficas funcionales con Tkinter</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-database-fill color-propio"></i>
+                                <h5 class="text-light">Manejo de bases de datos</h5>
+                                <p class="text-light">Trabajar con SQLite y operaciones CRUD</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-clock color-propio"></i>
+                                <h5 class="text-light">Gestión de tiempo</h5>
+                                <p class="text-light">Calcular diferencias de tiempo y formatear fechas</p>
+                            </div>
+
+                            <div class="learning-item">
+                                <i class="bi bi-file-earmark-text color-propio"></i>
+                                <h5 class="text-light">Manejo de estado</h5>
+                                <p class="text-light">Controlar variables globales y flujo de datos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posibles mejoras -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section">
+                        <h2 class="text-light mb-4">Posibles mejoras futuras</h2>
+                        <div class="proyecto-content">
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Sistema de múltiples usuarios con roles y permisos
+                            </p>
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Generación de reportes diarios y mensuales en PDF
+                            </p>
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Integración con cámaras para reconocimiento de patentes
+                            </p>
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Sistema de tarifas dinámicas (hora pico, descuentos, etc.)
+                            </p>
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Sistema de pago integrado (Webpay)
+                            </p>
+                            <p class="text-light mb-2">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Impresion de boleta con la información más importante
+                            </p>
+                            <p class="text-light">
+                                <i class="bi bi-check2 color-propio me-2"></i>
+                                Backup automático de la base de datos en la nube
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volver -->
+        <section class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="proyecto-section text-center">
+                        <h3 class="text-light mb-4">¿Quieres ver más proyectos?</h3>
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a href="../../index.html#proyectos" class="btn btn-danger px-4 py-2">
+                                <i class="bi bi-arrow-left me-2"></i>Ver más proyectos
+                            </a>
+                            <a href="../../index.html#contacto"
+                                class="btn text-light border borde-propio boton-propio px-4 py-2">
+                                <i class="bi bi-envelope me-2"></i>Hablemos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="navbar navbar-dark bg-black border borde-propio border-2 mt-5" data-bs-theme="dark">
+        <div class="container-fluid mx-3">
+            <div class="navbar-brand me-auto fw-bold">
+                <span>&copy; 2025 Portafolio Personal</span>
+            </div>
+            <div class="navbar-nav ms-auto flex-row gap-2">
+                <span class="nav-text fw-bold d-none d-sm-inline align-self-center text-light">Contacto:</span>
+                <a href="https://github.com/jitv-dev" class="nav-link text-white p-0" title="GitHub">
+                    <i class="bi bi-github fs-5"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/javier-torres-valenz/" class="nav-link text-white p-0"
+                    title="LinkedIn">
+                    <i class="bi bi-linkedin fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
