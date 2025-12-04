@@ -341,44 +341,36 @@
                                 Si te interesó mi trabajo o tienes un proyecto en mente, no dudes en contactarme
                             </p>
                         </div>
-
+                    
                         <div class="card-body p-4 p-md-5">
-                            <form action="https://formsubmit.co/927ea73b4119a8c74a9676a5e3849b99" method="POST">
+                            <form action="https://formspree.io/f/xovgldgw" method="POST" id="simpleForm">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="nombre" class="form-label text-light">Nombre</label>
-                                        <input type="text" name="nombre"
-                                            class="form-control bg-black text-light border borde-propio py-2"
+                                        <input type="text" name="nombre" class="form-control bg-black text-light border borde-propio py-2"
                                             id="nombre" placeholder="Tu nombre" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="email" class="form-label text-light">Email</label>
-                                        <input type="email" name="email"
-                                            class="form-control bg-black text-light border borde-propio py-2" id="email"
-                                            placeholder="tu.email@ejemplo.com" required>
+                                        <input type="email" name="email" class="form-control bg-black text-light border borde-propio py-2"
+                                            id="email" placeholder="tu.email@ejemplo.com" required>
                                     </div>
                                 </div>
-
-                                <input type="hidden" name="_subject" value="Nuevo contacto">
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_template" value="table">
-
+                    
+                                <input type="hidden" name="_subject" value="Nuevo contacto desde portafolio">
+                                <input type="text" name="_gotcha" style="display:none">
+                    
                                 <div class="mb-4">
                                     <label for="mensaje" class="form-label text-light">Mensaje</label>
-                                    <textarea name="mensaje"
-                                        class="form-control bg-black text-light border borde-propio" id="mensaje"
-                                        rows="5" placeholder="Cuéntame sobre tu proyecto o consulta..."
-                                        required></textarea>
+                                    <textarea name="mensaje" class="form-control bg-black text-light border borde-propio" id="mensaje"
+                                        rows="5" placeholder="Cuéntame sobre tu proyecto o consulta..." required></textarea>
                                 </div>
-
+                    
                                 <div class="text-center pt-3">
-                                    <button type="submit"
-                                        class="btn text-light border borde-propio boton-propio px-4 py-2">
+                                    <button type="submit" class="btn text-light border borde-propio boton-propio px-4 py-2">
                                         Enviar Mensaje
                                     </button>
                                 </div>
-
-                                <input type="hidden" name="_next" value="https://jitv-dev.github.io/portafolio/thank-you.html">
                             </form>
                         </div>
                     </div>
@@ -438,6 +430,15 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     
+
+    <!-- Script para el boton de enviar formulario -->
+    <script>
+        document.getElementById('simpleForm').addEventListener('submit', function () {
+            setTimeout(function () {
+                window.location.href = 'https://jitv-dev.github.io/portafolio/thank-you.html';
+            }, 100)
+        })
+    </script>
 </body>
 
 </html>
