@@ -11,27 +11,33 @@ Una vez publicado en GitHub Pages: `https://TU_USUARIO.github.io/javier-cv`
 
 | Tema | Archivo | Descripción |
 |------|---------|-------------|
-| 🔵 Tech | `style-tech.css` | Dark tech con acentos azules, tipografía Syne + DM Mono |
-| ⚔️ Solo Leveling | `style-sololeveling.css` | Sistema RPG, grid de partículas, runas, paneles holográficos |
-| 🍄 Mario | `style-mario.css` | Pixel art retro, tipografía Press Start 2P, nubes y ladrillos |
-| ⛏️ Minecraft | `style-minecraft.css` | Bloques pixelados, paleta de tierra y piedra, tipografía retro |
-| 🐱‍🐉 Digimon | `style-digimon.css` | Nostalgia digital, círculo de las 8 crestas, Dorumon y Digivice |
+| 🔵 Tech | `assets/css/style-tech.css` | Dark tech con acentos azules, tipografía Syne + DM Mono |
+| ⚔️ Solo Leveling | `assets/css/style-sololeveling.css` | Sistema RPG, grid de partículas, runas, paneles holográficos |
+| 🍄 Mario | `assets/css/style-mario.css` | Pixel art retro, tipografía Press Start 2P, nubes y ladrillos |
+| ⛏️ Minecraft | `assets/css/style-minecraft.css` | Bloques pixelados, paleta de tierra y piedra, tipografía retro |
+| 🐱‍🐉 Digimon | `assets/css/style-digimon.css` | Nostalgia digital, círculo de las 8 crestas, Dorumon y Digivice |
 
 El botón **"cambiar →"** en la esquina inferior derecha cicla entre todos los temas. La preferencia se guarda en `localStorage`.
 
 ---
 
-## 📁 Archivos
+## 📁 Estructura del proyecto
 
 ```
-index.html                — estructura del sitio
-style-tech.css            — tema Dark Tech (predeterminado)
-style-sololeveling.css    — tema Solo Leveling RPG
-style-mario.css           — tema Mario Bros pixel art
-style-minecraft.css       — tema Minecraft
-style-digimon.css         — tema Digimon Adventure
-script.js                 — animaciones e interacciones
-README.md                 — este archivo
+index.html                        — estructura del sitio
+README.md                         — este archivo
+assets/
+  css/
+    style-tech.css                — tema Dark Tech
+    style-sololeveling.css        — tema Solo Leveling RPG
+    style-mario.css               — tema Mario Bros pixel art
+    style-minecraft.css           — tema Minecraft
+    style-digimon.css             — tema Digimon Adventure (predeterminado)
+    style-responsive.css          — layout responsive unificado (todos los temas)
+  js/
+    script.js                     — animaciones e interacciones
+  img/
+    (imágenes del proyecto)
 ```
 
 ---
@@ -50,7 +56,7 @@ README.md                 — este archivo
 ## 🛠️ Publicar en GitHub Pages
 
 1. Crea un repositorio en GitHub (ej: `javier-cv`)
-2. Sube **todos** los archivos del proyecto
+2. Sube **todos** los archivos del proyecto respetando la estructura de carpetas
 3. Ve a **Settings → Pages**
 4. En **Source** selecciona: `Deploy from a branch`
 5. Branch: `main` → Folder: `/ (root)` → Guardar
@@ -61,10 +67,10 @@ README.md                 — este archivo
 
 ## ➕ Agregar un nuevo tema
 
-1. Crea un archivo `style-NOMBRE.css` con tus estilos
+1. Crea un archivo `style-NOMBRE.css` y colócalo en `assets/css/`
 2. Agrégalo al array `themes` en el `<script>` al final de `index.html`:
 ```js
-{ id: 'NOMBRE', css: 'style-NOMBRE.css', label: '🎨 Mi Tema' }
+{ id: 'NOMBRE', css: 'assets/css/style-NOMBRE.css', label: '🎨 Mi Tema' }
 ```
 3. ¡Listo! El botón lo incluirá automáticamente en el ciclo
 
