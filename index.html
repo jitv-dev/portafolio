@@ -9,7 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
-  <link id="theme-css" rel="stylesheet" href="style-digimon.css" />
+<link id="theme-css" rel="stylesheet" href="assets/css/style-digimon.css" />
+<link rel="stylesheet" href="assets/css/style-responsive.css" />
   <style>
     /* Switcher siempre visible sin importar el tema */
     #theme-switcher {
@@ -74,9 +75,15 @@
       <li><a href="#formacion">Formación</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-    <a href="mailto:javier.torresvalenz@gmail.com" class="nav-cta">Contactar</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="mailto:contacto.javiertorresvalenz@gmail.com"
+      class="nav-cta">Contactar</a>
   </nav>
-  
+
   <!-- HERO -->
   <header class="hero" id="inicio">
     <div class="hero-bg">
@@ -154,20 +161,20 @@
             <span class="skill-pill primary">Node.js</span>
             <span class="skill-pill primary">Python</span>
             <span class="skill-pill primary">PostgreSQL</span>
-        
+
             <span class="skill-pill">Express</span>
             <span class="skill-pill">REST APIs</span>
             <span class="skill-pill">JWT</span>
             <span class="skill-pill">SQL</span>
-        
+
             <span class="skill-pill">HTML5</span>
             <span class="skill-pill">CSS3</span>
-        
+
             <span class="skill-pill">Git / GitHub</span>
             <span class="skill-pill">Postman</span>
             <span class="skill-pill">Render</span>
             <span class="skill-pill">Vercel</span>
-        
+
             <span class="skill-pill">SCRUM</span>
           </div>
         </div>
@@ -235,7 +242,7 @@
             style="display: inline-block; margin-top: 0.8rem; text-decoration: underline; color: inherit; font-size: 0.85em; opacity: 0.8; transition: opacity 0.2s;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Ver Repositorio ↗</a>
         </div>
-      
+
         <div class="cert-card" data-reveal>
           <div class="cert-icon">🚗</div>
           <h4>App de Estacionamiento</h4>
@@ -246,22 +253,24 @@
             style="display: inline-block; margin-top: 0.8rem; text-decoration: underline; color: inherit; font-size: 0.85em; opacity: 0.8; transition: opacity 0.2s;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Ver Repositorio ↗</a>
         </div>
-      
+
         <div class="cert-card" data-reveal>
           <div class="cert-icon">🐎</div>
           <h4>Carrera de Caballos</h4>
-          <p>Juego interactivo tipo ruleta con animaciones, manipulación del DOM y lógica matemática de aleatoriedad.</p>
+          <p>Juego interactivo tipo ruleta con animaciones, manipulación del DOM y lógica matemática de aleatoriedad.
+          </p>
           <span class="cert-date">JavaScript · DOM · CSS</span>
           <br>
           <a href="https://github.com/jitv-dev/uma-roulette" target="_blank"
             style="display: inline-block; margin-top: 0.8rem; text-decoration: underline; color: inherit; font-size: 0.85em; opacity: 0.8; transition: opacity 0.2s;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Ver Repositorio ↗</a>
         </div>
-      
+
         <div class="cert-card" data-reveal>
           <div class="cert-icon">⚙️</div>
           <h4>NexusGear</h4>
-          <p>Aplicación de gestión de datos desarrollada en Java aplicando fuertemente el patrón de diseño arquitectónico MVC.
+          <p>Aplicación de gestión de datos desarrollada en Java aplicando fuertemente el patrón de diseño
+            arquitectónico MVC.
           </p>
           <span class="cert-date">Java · MVC · POO</span>
           <br>
@@ -269,7 +278,7 @@
             style="display: inline-block; margin-top: 0.8rem; text-decoration: underline; color: inherit; font-size: 0.85em; opacity: 0.8; transition: opacity 0.2s;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Ver Repositorio ↗</a>
         </div>
-      
+
         <div class="cert-card" data-reveal>
           <div class="cert-icon">🥖</div>
           <h4>API Panadería</h4>
@@ -281,11 +290,12 @@
             style="display: inline-block; margin-top: 0.8rem; text-decoration: underline; color: inherit; font-size: 0.85em; opacity: 0.8; transition: opacity 0.2s;"
             onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Ver Repositorio ↗</a>
         </div>
-      
+
         <div class="cert-card" data-reveal>
           <div class="cert-icon">💳</div>
           <h4>AlkeWallet</h4>
-          <p>Simulador de billetera virtual. Gestión de saldo, simulación de transacciones financieras y control de usuarios.
+          <p>Simulador de billetera virtual. Gestión de saldo, simulación de transacciones financieras y control de
+            usuarios.
           </p>
           <span class="cert-date">Java · Finanzas · Lógica</span>
           <br>
@@ -361,11 +371,11 @@
           <p class="renta-info">Disponible: <strong>Inmediatamente</strong></p>
         </div>
         <div class="contact-links">
-          <a href="mailto:javier.torresvalenz@gmail.com" class="contact-item">
+          <a href="mailto:contacto.javiertorresvalenz@gmail.com" class="contact-item">
             <div class="contact-icon">✉</div>
             <div>
               <div class="contact-label">Email</div>
-              <div class="contact-value">javier.torresvalenz@gmail.com</div>
+              <div class="contact-value">contacto.javiertorresvalenz@gmail.com</div>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/javier-torres-valenz/" target="_blank" class="contact-item">
@@ -401,15 +411,15 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
   <script>
     const themes = [
-        { id: 'tech', css: 'style-tech.css', label: '🔵 Tech' },
-        { id: 'sololeveling', css: 'style-sololeveling.css', label: '⚔️ Solo Leveling' },
-        { id: 'mario', css: 'style-mario.css', label: '🍄 Mario' },
-        { id: 'minecraft', css: 'style-minecraft.css', label: '⛏️ Minecraft' },
-        { id: 'digimon', css: 'style-digimon.css', label: '🐱‍🐉 Digimon' },
-      ];
+      { id: 'tech', css: 'assets/css/style-tech.css', label: '🔵 Tech' },
+      { id: 'sololeveling', css: 'assets/css/style-sololeveling.css', label: '⚔️ Solo Leveling' },
+      { id: 'mario', css: 'assets/css/style-mario.css', label: '🍄 Mario' },
+      { id: 'minecraft', css: 'assets/css/style-minecraft.css', label: '⛏️ Minecraft' },
+      { id: 'digimon', css: 'assets/css/style-digimon.css', label: '🐱‍🐉 Digimon' },
+    ];
 
     let idx = themes.findIndex(t => t.id === (localStorage.getItem('theme') || 'digimon'));
     if (idx < 0) idx = 0;

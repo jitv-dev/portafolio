@@ -1,7 +1,3 @@
-/* ══════════════════════════════════════════════════════════════════
-   DIGIMON ADVENTURE THEME — style-digimon.css
-   Círculo de las 8 Crestas + Digivice + Dorumon — solo CSS
-   ══════════════════════════════════════════════════════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
@@ -160,7 +156,7 @@ nav {
     top: calc(45% - 45px);
     width: 70px;
     height: 90px;
-    background-image: url('img/digivice.webp');
+    background-image: url('../img/digivice.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +173,7 @@ nav {
     right: 4%;
     width: 140px;
     height: 180px;
-    background-image: url('img/dorumon.webp');
+    background-image: url('../img/dorumon.webp');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -322,56 +318,56 @@ nav {
 }
 
 .hero-bg::before {
-    background-image: url('img/courage.webp');
+    background-image: url('../img/courage.webp');
     left: calc(72% - 32px);
     top: calc(45% - 252px);
     animation-delay: 0s;
 }
 
 .hero-bg::after {
-    background-image: url('img/friendship.webp');
+    background-image: url('../img/friendship.webp');
     left: calc(72% + 123px);
     top: calc(45% - 187px);
     animation-delay: -0.75s;
 }
 
 .orb1 {
-    background-image: url('img/hope.webp');
+    background-image: url('../img/hope.webp');
     left: calc(72% + 188px);
     top: calc(45% - 32px);
     animation-delay: -1.5s;
 }
 
 .orb1::before {
-    background-image: url('img/knowledge.webp');
+    background-image: url('../img/knowledge.webp');
     left: -65px;
     top: 155px;
     animation-delay: -2.25s;
 }
 
 .orb1::after {
-    background-image: url('img/light.webp');
+    background-image: url('../img/light.webp');
     left: -220px;
     top: 220px;
     animation-delay: -3s;
 }
 
 .orb2 {
-    background-image: url('img/love.webp');
+    background-image: url('../img/love.webp');
     left: calc(72% - 187px);
     top: calc(45% + 123px);
     animation-delay: -3.75s;
 }
 
 .orb2::before {
-    background-image: url('img/reliability.webp');
+    background-image: url('../img/reliability.webp');
     left: -65px;
     top: -155px;
     animation-delay: -4.5s;
 }
 
 .orb2::after {
-    background-image: url('img/sincerity.webp');
+    background-image: url('../img/sincerity.webp');
     left: 0px;
     top: -310px;
     animation-delay: -5.25s;
@@ -847,35 +843,35 @@ nav {
 
 /* Distribución automática de los 8 emblemas por cada tarjeta (Usando pseudo-selector nth-child) */
 .cert-card:nth-child(8n+1)::after {
-    background-image: url('img/courage.webp');
+    background-image: url('../img/courage.webp');
 }
 
 .cert-card:nth-child(8n+2)::after {
-    background-image: url('img/friendship.webp');
+    background-image: url('../img/friendship.webp');
 }
 
 .cert-card:nth-child(8n+3)::after {
-    background-image: url('img/love.webp');
+    background-image: url('../img/love.webp');
 }
 
 .cert-card:nth-child(8n+4)::after {
-    background-image: url('img/knowledge.webp');
+    background-image: url('../img/knowledge.webp');
 }
 
 .cert-card:nth-child(8n+5)::after {
-    background-image: url('img/sincerity.webp');
+    background-image: url('../img/sincerity.webp');
 }
 
 .cert-card:nth-child(8n+6)::after {
-    background-image: url('img/reliability.webp');
+    background-image: url('../img/reliability.webp');
 }
 
 .cert-card:nth-child(8n+7)::after {
-    background-image: url('img/hope.webp');
+    background-image: url('../img/hope.webp');
 }
 
 .cert-card:nth-child(8n+8)::after {
-    background-image: url('img/light.webp');
+    background-image: url('../img/light.webp');
 }
 
 .cert-card.visible {
