@@ -264,10 +264,16 @@
     gap: 0.8rem !important;
   }
 
-  /* ── THEME SWITCHER ── */
+  /* ── THEME / LANG SWITCHERS ── */
   #theme-switcher {
     bottom: 0.8rem !important;
     right: 0.8rem !important;
+    padding: 0.4rem 0.7rem !important;
+  }
+
+  #lang-switcher {
+    bottom: 0.8rem !important;
+    left: 0.8rem !important;
     padding: 0.4rem 0.7rem !important;
   }
 
