@@ -285,3 +285,34 @@
     padding: 1.1rem 1.2rem !important;
   }
 }
+
+@media (max-width: 900px) {
+  .contact-intro p {
+    font-size: 1rem !important;
+  }
+
+  .contact-value {
+    font-size: 0.9rem !important;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+
+  .renta-info {
+    font-size: 0.52rem !important;
+    white-space: normal !important;
+    word-break: break-word;
+    max-width: 100%;
+    display: block !important;
+    line-height: 1.6;
+  }
+
+  .contact-item {
+    gap: 0.8rem !important;
+    padding: 1rem !important;
+    overflow: hidden;
+  }
+
+  .contact-icon {
+    flex-shrink: 0;
+  }
+}
