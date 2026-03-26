@@ -11,6 +11,9 @@ const translations = {
         'nav.aria': 'Abrir menú',
         // LANG BUTTON
         'lang.btn': 'EN | US',
+        'lang.label': 'cambiar a',
+        'theme.lbl.current': 'actual',
+        'theme.lbl.next': 'siguiente',
         // HERO
         'hero.badge': 'Disponible para trabajar',
         'hero.summary': 'Desarrollador Fullstack JavaScript y Java con formación en Talento Digital (2025). Especialista en APIs REST, JWT y PostgreSQL. Aprendiendo a utilizar Springboot. Rápido aprendizaje y comunicación clara. Busco mi primera oportunidad en TI para crecer y aportar a equipos de desarrollo.',
@@ -83,6 +86,9 @@ const translations = {
         'nav.aria': 'Open menu',
         // LANG BUTTON
         'lang.btn': 'ES | CL',
+        'lang.label': 'change to',
+        'theme.lbl.current': 'current',
+        'theme.lbl.next': 'next',
         // HERO
         'hero.badge': 'Available for work',
         'hero.summary': 'Fullstack JavaScript and Java Developer trained at Talento Digital (2025). Specialist in REST APIs, JWT and PostgreSQL. Currently learning Spring Boot. Fast learner with clear communication skills. Looking for my first IT opportunity to grow and contribute to development teams.',

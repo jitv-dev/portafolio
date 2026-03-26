@@ -266,15 +266,28 @@
 
   /* ── THEME / LANG SWITCHERS ── */
   #theme-switcher {
-    bottom: 0.8rem !important;
-    right: 0.8rem !important;
-    padding: 0.4rem 0.7rem !important;
+    bottom: 0.6rem !important;
+    right: 0.6rem !important;
+    padding: 0.4rem 0.6rem !important;
+    gap: 0.5rem !important;
   }
 
   #lang-switcher {
-    bottom: 0.8rem !important;
-    left: 0.8rem !important;
-    padding: 0.4rem 0.7rem !important;
+    bottom: 0.6rem !important;
+    left: 0.6rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+
+  #lang-switcher .sw-meta,
+  .sw-col .sw-meta {
+    font-size: 0.30rem !important;
+  }
+
+  #theme-label,
+  #theme-toggle,
+  #lang-toggle {
+    font-size: 0.32rem !important;
+    padding: 0.35rem 0.6rem !important;
   }
 
   /* ── SECTIONS ── */
@@ -321,4 +334,52 @@
   .contact-icon {
     flex-shrink: 0;
   }
+}
+
+/* ══════════════════════════════════════════
+   OVERRIDE: unifica switchers en todos los temas
+   ══════════════════════════════════════════ */
+#theme-switcher {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: 3px solid #f8c800 !important;
+  box-shadow: 4px 4px 0 #000 !important;
+  align-items: flex-start !important;
+}
+
+#lang-switcher {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border: 3px solid #f8c800 !important;
+  box-shadow: 4px 4px 0 #000 !important;
+}
+
+#theme-label {
+  color: #f8c800 !important;
+  background: transparent !important;
+  border: 2px solid #f8c800 !important;
+  box-shadow: none !important;
+  font-family: 'Press Start 2P', monospace !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+#theme-toggle {
+  background: #f8c800 !important;
+  color: #180828 !important;
+  border: 2px solid #000 !important;
+  box-shadow: 2px 2px 0 #000 !important;
+  font-family: 'Press Start 2P', monospace !important;
+}
+
+#lang-toggle {
+  background: #f8c800 !important;
+  color: #180828 !important;
+  border: 2px solid #000 !important;
+  box-shadow: 2px 2px 0 #000 !important;
+  font-family: 'Press Start 2P', monospace !important;
+}
+
+.sw-meta {
+  color: #f8c800 !important;
+  font-family: 'Press Start 2P', monospace !important;
+  opacity: 0.85 !important;
 }

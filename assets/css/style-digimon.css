@@ -1124,50 +1124,6 @@ footer {
 }
 
 /* ════════════════════════════════════════
-   THEME SWITCHER
-════════════════════════════════════════ */
-#theme-switcher {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    background: rgba(6, 29, 58, 0.95);
-    border: 1px solid rgba(0, 229, 255, 0.35);
-    padding: 0.6rem 1.1rem;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 12px rgba(0, 229, 255, 0.15);
-}
-
-#theme-label {
-    font-family: var(--pixel);
-    font-size: 0.6rem;
-    color: var(--digi-cyan);
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-
-#theme-toggle {
-    background: var(--digi-orange);
-    color: var(--text-main);
-    border: none;
-    padding: 0.5rem 0.9rem;
-    font-family: var(--pixel);
-    font-size: 0.55rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background 0.2s;
-    white-space: nowrap;
-}
-
-#theme-toggle:hover {
-    background: var(--digi-yellow);
-    color: var(--dark);
-}
-
-/* ════════════════════════════════════════
    RESPONSIVE
 ════════════════════════════════════════ */
 /* ════════════════════════════════════════

@@ -18,96 +18,147 @@
     href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link id="theme-css" rel="stylesheet" href="assets/css/style-digimon.css" />
-<link rel="stylesheet" href="assets/css/style-responsive.css" />
-<style>
-  /* Switcher siempre visible sin importar el tema */
-  #lang-switcher {
-    position: fixed;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    z-index: 99999;
-    background: rgba(0, 0, 0, 0.9);
-    border: 3px solid #f8c800;
-    box-shadow: 4px 4px 0 #000;
-    padding: 0.5rem 0.9rem;
-    backdrop-filter: blur(10px);
-  }
+  <link rel="stylesheet" href="assets/css/style-responsive.css" />
+  <style>
+    /* Switcher siempre visible sin importar el tema */
+    /* ── LANG SWITCHER ── */
+    #lang-switcher {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(0, 0, 0, 0.9);
+      border: 3px solid #f8c800;
+      box-shadow: 4px 4px 0 #000;
+      padding: 0.8rem 0.9rem 0.5rem;
+      backdrop-filter: blur(10px);
+    }
 
-  #lang-toggle {
-    background: #f8c800;
-    color: #180828;
-    border: 2px solid #000;
-    box-shadow: 2px 2px 0 #000;
-    padding: 0.45rem 0.9rem;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.5rem;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-    display: block;
-    transition: transform 0.1s, box-shadow 0.1s;
-  }
+    #lang-switcher .sw-meta {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.38rem;
+      color: #f8c800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.85;
+      white-space: nowrap;
+      display: block;
+    }
 
-  #lang-toggle:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0 #000;
-  }
+    #lang-toggle {
+      background: #f8c800;
+      color: #180828;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #000;
+      padding: 0.45rem 0.9rem;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.42rem;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      transition: transform 0.1s, box-shadow 0.1s;
+      line-height: 1;
+    }
 
-  #theme-switcher {
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    background: rgba(0, 0, 0, 0.9);
-    border: 3px solid #f8c800;
-    box-shadow: 4px 4px 0 #000;
-    padding: 0.5rem 0.9rem;
-    backdrop-filter: blur(10px);
-  }
+    #lang-toggle:hover {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 #000;
+    }
 
-  #theme-label {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.42rem;
-    color: #f8c800;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-  }
+    /* ── THEME SWITCHER ── */
+    #theme-switcher {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 99999;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      background: rgba(0, 0, 0, 0.9);
+      border: 3px solid #f8c800;
+      box-shadow: 4px 4px 0 #000;
+      padding: 0.8rem 0.9rem 0.5rem;
+      backdrop-filter: blur(10px);
+    }
 
-  #theme-toggle {
-    background: #f8c800;
-    color: #180828;
-    border: 2px solid #000;
-    box-shadow: 2px 2px 0 #000;
-    padding: 0.45rem 0.9rem;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.38rem;
-    cursor: pointer;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: transform 0.1s, box-shadow 0.1s;
-    white-space: nowrap;
-  }
+    .sw-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    }
 
-  #theme-toggle:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0 #000;
-  }
-</style>
+    .sw-col .sw-meta {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.38rem;
+      color: #f8c800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.85;
+      white-space: nowrap;
+      display: block;
+      line-height: 1;
+    }
+
+    #theme-label {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.42rem;
+      color: #f8c800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      background: transparent;
+      border: 2px solid #f8c800;
+      box-shadow: none;
+      padding: 0.45rem 0.9rem;
+      cursor: default;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    #theme-toggle {
+      background: #f8c800;
+      color: #180828;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #000;
+      padding: 0.45rem 0.9rem;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 0.42rem;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: transform 0.1s, box-shadow 0.1s;
+      line-height: 1;
+    }
+
+    #theme-toggle:hover {
+      transform: translate(1px, 1px);
+      box-shadow: 1px 1px 0 #000;
+    }
+  </style>
 </head>
 
 <body>
 
   <div id="lang-switcher">
-    <button id="lang-toggle" onclick="toggleLang()">ES</button>
+    <span class="sw-meta" id="lang-meta" data-i18n="lang.label">cambiar a</span>
+    <button id="lang-toggle" onclick="toggleLang()">EN | US</button>
   </div>
 
   <div id="theme-switcher">
-    <span id="theme-label">🔵 Tech</span>
-    <button id="theme-toggle" onclick="cycleTheme()" data-i18n="theme.toggle">cambiar →</button>
+    <div class="sw-col">
+      <span class="sw-meta" data-i18n="theme.lbl.current">actual</span>
+      <button id="theme-label" disabled></button>
+    </div>
+    <div class="sw-col">
+      <span class="sw-meta" data-i18n="theme.lbl.next">siguiente</span>
+      <button id="theme-toggle" onclick="cycleTheme()"></button>
+    </div>
   </div>
 
   <nav>
@@ -124,8 +175,7 @@
       <span></span>
       <span></span>
     </button>
-    <a href="mailto:contacto.javiertorresvalenz@gmail.com"
-      class="nav-cta" data-i18n="nav.cta">Contactar</a>
+    <a href="mailto:contacto.javiertorresvalenz@gmail.com" class="nav-cta" data-i18n="nav.cta">Contactar</a>
   </nav>
 
   <!-- HERO -->
@@ -470,11 +520,11 @@
   <script src="assets/js/script.js"></script>
   <script>
     const themes = [
-      { id: 'tech', css: 'assets/css/style-tech.css', label: '🔵 Tech' },
-      { id: 'sololeveling', css: 'assets/css/style-sololeveling.css', label: '⚔️ Solo Leveling' },
-      { id: 'mario', css: 'assets/css/style-mario.css', label: '🍄 Mario' },
-      { id: 'minecraft', css: 'assets/css/style-minecraft.css', label: '⛏️ Minecraft' },
-      { id: 'digimon', css: 'assets/css/style-digimon.css', label: '🐱‍🐉 Digimon' },
+      { id: 'tech', css: 'assets/css/style-tech.css', label: 'Tech' },
+      { id: 'sololeveling', css: 'assets/css/style-sololeveling.css', label: 'Solo Leveling' },
+      { id: 'mario', css: 'assets/css/style-mario.css', label: 'Mario' },
+      { id: 'minecraft', css: 'assets/css/style-minecraft.css', label: 'Minecraft' },
+      { id: 'digimon', css: 'assets/css/style-digimon.css', label: 'Digimon' },
     ];
 
     let idx = themes.findIndex(t => t.id === (localStorage.getItem('theme') || 'digimon'));
@@ -482,9 +532,9 @@
 
     function applyTheme() {
       const t = themes[idx];
+      const next = themes[(idx + 1) % themes.length];
       document.getElementById('theme-css').href = t.css;
       document.getElementById('theme-label').textContent = t.label;
-      const next = themes[(idx + 1) % themes.length];
       document.getElementById('theme-toggle').textContent = next.label;
       localStorage.setItem('theme', t.id);
     }
